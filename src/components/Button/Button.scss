@@ -1,0 +1,120 @@
+$surface-color: #ffffff;
+$on-surface-color: #000000;
+
+$success-color: #14914F;
+$on-success-color: #ffffff;
+
+$warning-color: #F2AB11;
+$on-warning-color: #000000;
+
+$danger-color: #B02E41;
+$on-danger-color: #ffffff;
+
+$primary-color: #002c9b;
+$on-primary-color: #ffffff;
+
+$secondary-color: #0069ff;
+$on-secondary-color: #ffffff;
+
+$accent-color: #33cfc8;
+$on-accent-color: #000000;
+
+button {
+  display: inline-block;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: 500;
+  padding: 12px 20px;
+  border-radius: 28px;
+  border-width: 3px;
+  border-style: solid;
+
+  color: $surface-color;
+  background-color: $on-surface-color;
+  border-color: $on-surface-color;
+
+  &.outlined {
+    color: $on-surface-color;
+    background-color: $surface-color;
+    border-color: $on-surface-color;
+  }
+
+  &:hover {
+    filter: brightness(50%);
+    filter: saturate(50%);
+    transition: all 1s ease;
+  }
+
+  &.success {
+    color: $on-success-color;
+    background-color: $success-color;
+    border-color: $success-color;
+
+    &.outlined {
+      color: $success-color;
+      background-color: $on-success-color;
+      border-color: $success-color;
+    }
+  }
+
+  &.warning {
+    color: $on-warning-color;
+    background-color: $warning-color;
+    border-color: $warning-color;
+
+    &.outlined {
+      color: $warning-color;
+      background-color: $on-warning-color;
+      border-color: $warning-color;
+    }
+  }
+
+  &.danger {
+    color: $on-danger-color;
+    background-color: $danger-color;
+    border-color: $danger-color;
+
+    &.outlined {
+      color: $danger-color;
+      background-color: $on-danger-color;
+      border-color: $danger-color;
+    }
+  }
+
+  &.primary {
+    color: $on-primary-color;
+    background-color: $primary-color;
+    border-color: $primary-color;
+
+    &.outlined {
+      color: $primary-color;
+      background-color: $on-primary-color;
+      border-color: $primary-color;
+    }
+  }
+
+  &.secondary {
+    color: $on-secondary-color;
+    background-color: $secondary-color;
+    border-color: $secondary-color;
+
+    &.outlined {
+      color: $secondary-color;
+      background-color: $on-secondary-color;
+      border-color: $secondary-color;
+    }
+  }
+
+  &.accent {
+    color: $on-accent-color;
+    background-color: $accent-color;
+    border-color: $accent-color;
+
+    &.outlined {
+      color: $accent-color;
+      background-color: $on-accent-color;
+      border-color: $accent-color;
+    }
+  }
+
+}
